@@ -53,6 +53,7 @@ Here is the HTML code of your `src/index.html`:
 ### WebdriverIO spec
 
 In order to pass the tests it is a requirement that Chrome runs in headless mode which means that your `test/wdio.conf.js` must have the following code in the `capabilities`
+
 ````js
 // ...
         chromeOptions: {
