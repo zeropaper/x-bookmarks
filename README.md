@@ -189,6 +189,125 @@ before_install:
 
 Based on the test screenshots (whih you can find under `node_modules/xt-sc-bookmarks/sc`), recreate the design.
 
+<details>
+  <summary>CSS without values</summary>
+  
+````scss
+*,
+*:before,
+*:after {
+  box-sizing: /* ... */;
+}
+
+body {
+  margin: /* ... */;
+  padding: /* ... */;
+  display: /* ... */;
+  flex-direction: /* ... */;
+  font-family: /* ... */;
+  background-color: /* ... */;
+  color: /* ... */;
+}
+
+body > header {
+  background-color: /* ... */;
+}
+
+form,
+.bookmarks {
+  min-width: /* ... */;
+  max-width: /* ... */;
+  margin: /* ... */;
+  padding: /* ... */;
+}
+
+form {
+  input,
+  textarea,
+  button {
+    font-size: /* ... */;
+    border: /* ... */;
+  }
+
+  input,
+  textarea {
+    width: /* ... */;
+    margin: /* ... */;
+    padding: /* ... */;
+    font-family: /* ... */;
+    display: /* ... */;
+  }
+
+  input {
+    border-radius: /* ... */;
+  }
+
+  textarea {
+    border-radius: /* ... */;
+    border-top: /* ... */;
+  }
+
+  button {
+    border-left: /* ... */;
+    border-radius: /* ... */;
+  }
+}
+
+
+
+.columns,
+.rows {
+  display: /* ... */;
+}
+
+.columns {
+  flex-direction: /* ... */;
+}
+
+.rows {
+  flex-direction: /* ... */;
+}
+
+.grow {
+  flex-grow: /* ... */;
+}
+
+
+.bookmarks {
+  list-style: /* ... */;
+
+  > li {
+    border: /* ... */;
+    border-radius: /* ... */;
+    background-color: /* ... */;
+    padding: /* ... */;
+    margin: /* ... */;
+    position: /* ... */;
+  }
+
+  a {
+    font-size: /* ... */;
+    text-decoration: /* ... */;
+    color: /* ... */;
+  }
+}
+
+.remove {
+  display: /* ... */;
+  text-align: /* ... */;
+  width: /* ... */;
+  height: /* ... */;
+  padding: /* ... */;
+  border-radius: /* ... */;
+  border: /* ... */;
+  position: /* ... */;
+  right: /* ... */;
+  top: /* ... */;
+}
+````
+  
+</details>
+
 ### More to come
 
 The exercise is not finished yet...
