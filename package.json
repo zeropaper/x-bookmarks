@@ -1,0 +1,41 @@
+{
+  "name": "x-bookmarks",
+  "version": "1.0.0",
+  "description": "A bookmarking tool",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "prebuild": "jshint src && mkdirp docs/image-diffs && cp src/index.html docs/",
+    "build": "browserify src/index.js -o docs/bundle.js && node-sass src/style.scss > docs/style.css",
+    "postbuild": "uglifyjs docs/bundle.js -o docs/bundle.js",
+    "test": "npm run build && wdio test/wdio.conf.js",
+    "test:dev": "nodemon -w test/ -x \"./node_modules/.bin/wdio test/wdio.conf.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeropaper/x-bookmarks.git"
+  },
+  "keywords": [
+    "exercise",
+    "localstorage"
+  ],
+  "author": "Valentin Vago <zeropaper@irata.ch>",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "cp": "^0.2.0",
+    "jshint": "^2.9.5",
+    "mkdirp": "^0.5.1",
+    "node-resemble-v2": "^1.0.0",
+    "node-sass": "^4.5.3",
+    "uglify-js": "^3.0.28",
+    "wdio": "^1.0.0",
+    "wdio-mocha-framework": "^0.5.11",
+    "wdio-selenium-standalone-service": "0.0.9",
+    "wdio-spec-reporter": "^0.1.2",
+    "wdio-static-server-service": "^1.0.1",
+    "xt-sc-bookmarks": "github:zeropaper/xt-sc-bookmarks"
+  }
+}

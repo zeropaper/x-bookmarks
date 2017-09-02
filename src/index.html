@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookmarks</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+  <form method="get" class="columns">
+    <div class="grow rows">
+      <div>
+        <input required type="url" name="link" placeholder="https://devdocs.io" />
+      </div>
+      <div>
+        <textarea name="notes" placeholder="Some notes about the link"></textarea>
+      </div>
+    </div>
+    <div class="rows">
+      <button class="grow">Save</button>
+    </div>
+  </form>
+</header>
+<main>
+  <ul class="bookmarks">
+    <!-- <li class="bookmark">
+      <div>
+        <a href="https://devdocs.io">https://devdocs.io</a>
+        <p>Works offline</p>
+      </div>
+      <button class="remove">X</button>
+    </li> -->
+  </ul>
+
+  <script type="text/javascript" src="bundle.js"></script>
+</main>
+</body>
+</html>
